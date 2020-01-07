@@ -1,0 +1,13 @@
+type Atendimento {
+  id: ID!
+  clienteId: Int!,
+  petId: Int!,
+  servicoId: Int!,
+  data: String!,
+  status: String,
+  observacoes: String
+}
+
+type Mutation {
+  adicionarAtendimento(clienteId: Int!, petId: Int!, servicoId: Int!, status: String, observacoes: String): Atendimento!
+}
